@@ -1,0 +1,26 @@
+.upIcon{
+    /* display: none; */
+    bottom: 20px; 
+    right: 30px;  
+    background-color: rgb(146, 60, 60);
+    padding: 10px;
+    border-radius: 55%; 
+    position: fixed;
+}
+.upIcon:hover{
+    background-color: rgb(60, 7, 8); 
+  
+}
+.upIcon.goster{
+    display: block;
+}
+.kaybol{
+    display: none;
+}
+@media (max-width: 480px) {
+    .upIcon{
+        bottom: 50px;
+        right: 10px;
+    }
+
+}

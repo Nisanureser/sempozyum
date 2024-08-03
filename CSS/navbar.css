@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+     
+}
+.nav li{
+    list-style: none;
+   padding: 6px;
+}
+.navbar .nav a{
+    color: rgb(224,80,80);
+    text-decoration: none;
+    display: inline-block; 
+    transition: all 0.1s ease;
+    padding: 5px 5px;
+}
+.navbar  .nav a:hover{
+    color: white;
+    border: none;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(224, 80, 80));
+    border: 1px solid rgba(224, 80, 80,0.5);
+    border-radius: 9px;
+    padding: 5px 5px;
+    
+}
+.logo img {
+    width: 220px; 
+    height: auto; 
+    position: absolute; 
+    top: 7px;
+    left: 35PX;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem ;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+
+}
+.navbar .nav{
+    display: flex;
+    gap: 2rem;
+}
+.navbar .toogle_btn{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.toogle_btn i {
+    color:red;
+    font-size: 2rem; }
+
+.dropDown_menu{ 
+display: none;
+position: absolute;
+right: 0px;
+top: 60px;
+width: 200px;
+background-color: rgba(255,255,255,0.1);
+backdrop-filter: blur(15px);
+border-radius: 10px;
+overflow: hidden;
+height: 0;
+transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropDown_menu.open{
+    height:  195px;
+}
+.dropDown_menu li{
+    padding: 0.7rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.dropDown_menu li a{
+    color: white;
+    text-decoration: none;
+}
+.dropDown_menu li a:hover{
+    width: 150px;
+    height: 27px;
+    text-align: center;
+    color: white;
+    background-color: rgb(97, 33, 33);
+    background-color: rgb(97, 33, 33);
+    border-radius: 9px;
+    transition: 0.1S;
+}
+
+ @media (max-width:990px) {
+    .navbar .nav{
+        display: none;
+    }
+    .navbar .toogle_btn{
+        display: block;
+    }
+    .dropDown_menu{
+        display: block;
+    }
+
+}
+   @media (max-width:576) {
+        .dropDown_menu{
+            left: 2rem;
+            width: unset;
+        }
+        
+    } 
